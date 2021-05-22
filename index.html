@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <!--Coded by Sir Bhem Apare-->
+    <head>
+        <title>Redirection Page Sample</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        
+        <style>
+            body {
+                background-image: url(https://iili.io/KXgdJf.jpg);
+                opacity: 0.85;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                height: 100vh;
+            }
+
+            .div1{
+                width: cover;
+                margin:auto;
+                margin: 10 0 0 450px;
+                overflow: hidden;
+                padding: 75px;
+                background: #003300;
+            
+            }
+            .div2{background-color: yellow;}/*yellow*/
+
+            h1{
+                text-align: center;
+                font-family: 'Brush Script MT', cursive;
+                font-style: italic;
+                font-size: 50px;
+                font-weight: bolder;
+                margin-top: 20px;
+                padding-top: 30px;
+            }
+            h2{
+                text-align: center;
+                padding: 10px;
+                color:#003300;
+            }
+
+            label{
+                color: white;
+                padding-left: 10px;
+            }
+
+            .inputText{
+                width: 300px;
+                height: 30px;
+                border: none;
+                border-radius: 2px;
+                padding-left: 8px;
+            }
+
+            #logButtone{
+                width: 300px;
+                height: 30px;
+                border: none;
+                border-radius: 10px;
+                padding-left: 7px;
+                color: black;
+                font-size: 16px;
+                padding-left: 100px;
+                cursor: pointer;
+                
+            }
+
+            img {
+                border-radius: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h3{
+                text-align: center;
+            }
+            
+            .row {
+                padding: 0 8px;
+                margin: 0px;
+                margin-top: 30px;
+                margin-left: 100px;
+
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="h1">
+            <h1>Coordinator's Login</h1>
+        </div>
+        <p style="text-align: center;">Click to login!</p>
+        <div class="row";>
+            <!--STEM Button-->
+            <button type="button" style="margin: 20px;"  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                <img src="https://iili.io/BdFWog.png"; alt="STEM Logo" width="200px" height="200px"; style="background-color: brown";>
+                <p style="color: maroon"; style="font-weight: bolder;">STEM <br><small>Science, Technology,<br>Engineering, & Mathematics </small></p>
+            </button>
+            <!--HUMSS Button-->
+            <button type="button" style="margin: 20px;"  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">
+                <img src="https://iili.io/BeOaAx.png"; alt="HUMSS Logo" width="200px" height="200px"; style="background-color: yellow";>
+                <p style="color: maroon"; style="font-weight: bolder;">HUMSS <br><small>Humanities &<br>Social Sciences</small></p>
+            </button>
+            <!--HUMSS Button-->
+            <button type="button" style="margin: 20px;"  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
+                <img src="https://iili.io/BeOY9j.png"; alt="ABM Logo" width="200px" height="200px"; style="background-color: blue";>
+                <p style="color: maroon"; style="font-weight: bolder;">ABM <br><small>Accountancy and<br>Business Management</small></p>
+            </button>
+            <!--HUMSS Button-->
+            <button type="button" style="margin: 20px;"  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">
+                <img src="https://iili.io/BdFMDF.png"; alt="MMA Logo" width="215px" height="200px"; style="background-color: rgb(105, 240, 105)";>
+                <p style="color: maroon"; style="font-weight: bolder;">VP/Admin<br><small>Vice Principal/<br>Academic Coordinator</small></p>
+            </button>
+        </div>
+
+        <!--STEM Modal-->
+        <div class="container">
+            <br><br>
+            <br><br>
+            <!-- Trigger the modal with a button -->
+                     
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                    
+                    <div class="div1">
+                        <img src="https://iili.io/BO3J29.jpg" alt="My ID" style="width:200px">
+                        <h3 style="color: yellow;">STEM Strand Coordinator</h3>
+                        <form name="myForm" method="post">
+                            <label>User Name</label>
+                            <input type="text" name="Uname" class="inputText" placeholder="bhem">
+                            <br><br>
+                            <label>Password</label>
+                            <input type="password" name="Pass" class="inputText" placeholder="Password">
+                            <br><br>
+                            <input type="button" name="log" id="logButton" value="Login" onclick="myFunction()">
+                            <br><br>
+                            
+                        </form>
+                        <script>
+                            function myFunction()
+                            {
+                                var un = document.forms["myForm"]["Uname"].value;
+                                var pw = document.forms["myForm"]["Pass"].value;
+                                if(un=="STEM" && pw=="stem")
+                                {
+                                    window.location.href="https://mmastemfiles.github.io/Coordinators_File/";
+                                }
+                                else{
+                                    alert("Invalid Username and Password");
+                                }
+                    
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+        <!--HUMSS Modal-->
+        <div class="container">
+            <!-- Trigger the modal with a button -->
+             
+            <!-- Modal -->
+            <div class="modal fade" id="myModal1" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                    
+                    <div class="div1">
+                        <img src="https://iili.io/Kz53Ij.png" alt="My ID" style="width:200px">
+                        <h3 style="color: yellow;">HUMSS Strand Coordinator</h3>
+                        <form name="myForm2" method="post">
+                            <label>User Name</label>
+                            <input type="text" name="Uname" class="inputText" placeholder="HUMSS">
+                            <br><br>
+                            <label>Password</label>
+                            <input type="password" name="Pass" class="inputText" placeholder="Password">
+                            <br><br>
+                            <input type="button" name="log" id="logButton" value="Login" onclick="myFunction2()">
+                            <br><br>
+                            
+                        </form>
+                        <script>
+                            function myFunction2()
+                            {
+                                var un = document.forms["myForm2"]["Uname"].value;
+                                var pw = document.forms["myForm2"]["Pass"].value;
+                                if(un=="HUMSS" && pw=="humss")
+                                {
+                                    window.location.href="https://mmastemfiles.github.io/STEM_Enrollees/";
+                                }
+                                else{
+                                    alert("Invalid Username and Password");
+                                }
+                    
+                            }
+                        </script>
+                    </div>
+                  
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <!--ABM Modal-->
+        <div class="container">
+            <!-- Trigger the modal with a button -->
+             
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                    
+                    <div class="div1">
+                        <img src="https://iili.io/Kz53Ij.png" alt="My ID" style="width:200px">
+                        <h3 style="color: yellow;">ABM Strand Coordinator</h3>
+                        <form name="myForm3" method="post">
+                            <label>User Name</label>
+                            <input type="text" name="Uname" class="inputText" placeholder="ABM">
+                            <br><br>
+                            <label>Password</label>
+                            <input type="password" name="Pass" class="inputText" placeholder="Password">
+                            <br><br>
+                            <input type="button" name="log" id="logButton" value="Login" onclick="myFunction3()">
+                            <br><br>
+                            
+                        </form>
+                        <script>
+                            function myFunction3()
+                            {
+                                var un = document.forms["myForm3"]["Uname"].value;
+                                var pw = document.forms["myForm3"]["Pass"].value;
+                                if(un=="ABM" && pw=="abm")
+                                {
+                                    window.location.href="https://mmastemfiles.github.io/gradCountdown/";
+                                }
+                                else{
+                                    alert("Invalid Username and Password");
+                                }
+                    
+                            }
+                        </script>
+                    </div>
+                  
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <!--VP/Admin Modal-->
+        <div class="container">
+            <!-- Trigger the modal with a button -->
+             
+            <!-- Modal -->
+            <div class="modal fade" id="myModal3" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                    
+                    <div class="div1">
+                        <img src="https://iili.io/Kz53Ij.png" alt="My ID" style="width:200px">
+                        <h3 style="color: yellow;">VP/ Academic Coordinator</h3>
+                        <form name="myForm4" method="post">
+                            <label>User Name</label>
+                            <input type="text" name="Uname" class="inputText" placeholder="Admin">
+                            <br><br>
+                            <label>Password</label>
+                            <input type="password" name="Pass" class="inputText" placeholder="Password">
+                            <br><br>
+                            <input type="button" name="log" id="logButton" value="Login" onclick="myFunction4()">
+                            <br><br>
+                            
+                        </form>
+                        <script>
+                            function myFunction4()
+                            {
+                                var un = document.forms["myForm4"]["Uname"].value;
+                                var pw = document.forms["myForm4"]["Pass"].value;
+                                if(un=="ADMIN" && pw=="admin")
+                                {
+                                    window.location.href="https://mmastemfiles.zyrosite.com/";
+                                }
+                                else{
+                                    alert("Invalid Username and Password");
+                                }
+                    
+                            }
+                        </script>
+                    </div>
+                  
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </body>
+</html>
